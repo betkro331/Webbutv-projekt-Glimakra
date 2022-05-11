@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annorlunda Resor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- <img src="images/stockholm.jpg" alt="Kvällsvy över Stockholm">
+        <span class="top-text">Upptäck Södermanland och Stockholm!</span> -->
+    </header>
+    <nav class="navbar">
+        <!-- NAVBAR I SÄRSKILD FIL SOM LÄGGS IN I <NAV> PÅ VARJE SIDA? -->
+        <li><a href="index.html">Hem</a> </li>
+        <li><a href="resor.html">Våra resor</a> </li>
+        <li><a href="resetips.html">Blogg och resetips</a></li>
+        <li><a href="aktuellt.html">Aktuellt</a></li>
+        <li><a href="galleri.html">Galleri</a></li>
+        <li><a href="nyhetsbrev.html">Nyhetsbrev</a></li>
+        <li><a href="om.html">Om oss</a></li>
+    </nav>
+
+    <main class="main">
+        <h1>Nyhetsbrev</h1>
+        <div>
+            <h5>Vill du ha mer inspiration till din nästa resa? Prenumerera på vårt nyhetsbrev.</h5>
+            <br>
+            <form action="/" method="POST">
+                <label for="name">Ditt namn:</label>
+                <br>
+                <input type="text" class="input" name="name" id="name" minlength="2" maxlength="50">
+                <br>
+                <label for="email">Din e-postadress:</label>
+                <br>
+                <input type="email" class="input" name="email" id="email" required>
+                <br>
+                <input type="submit" class="submitBtn" value="prenumerera">
+            </form>
+        </div>
+    </main>
+
+
+</body>
+
+</html>

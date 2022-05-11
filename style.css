@@ -1,0 +1,224 @@
+* {
+    font-family: 'Pangolin', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: aliceblue;
+    font-size: 1.8rem;
+    color: black;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end; 
+    background-color: #007eb2; 
+    background-color: rgb(72, 112, 123); 
+    background-color: #293845; 
+    background-color: #030608;
+    background-color: #abc8d7;
+    background-color: rgb(163, 144, 135);
+    background-color: #6ea5b3;
+    padding: 20px 0;
+}
+
+div {
+    display: block;
+}
+
+ul, li, a {
+    list-style: none;
+    text-decoration: none;
+    padding: 0.8em; 
+    font-size: 1.5rem;  
+    color: black;
+  }
+
+.section1 {
+    min-height: 600px;
+    color: black;
+    background-image: url("swedMountain.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+/* .section1-heading {
+    text-align: center;
+} */
+
+.section1 p {
+    font-size: 2rem;
+    color: white;
+}
+
+.section2 h5 {
+    margin: 0;
+    min-height: 100px;
+    background-color: #a39087;
+    color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+
+/* --- Specifikt för sidan INDEX --- */
+.index-specific {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    width: 80%;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 200px;
+    line-height: 1.5;
+}
+
+.index1 { 
+    text-align: justify; 
+    padding: 3rem;
+}
+
+.index1 p { 
+    font-size: 1.2rem;
+}
+
+.index2 {
+    border: solid black 1px;
+    padding: 3rem;
+    background-color:#abc8d7;
+}
+
+.index-specific-beige {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding-top: 3rem;
+   
+    background-image: linear-gradient(to bottom, rgb(163, 144, 135, 0.4), rgba(226, 234, 240, 0));
+}
+
+.index-specific-beige-text {
+    text-align: center;
+    padding: 3rem;
+} 
+
+#index-button {
+    align-items: center;
+    border-width: 3px;
+    border-radius: 8px;
+    border-style: solid; 
+    border-image: linear-gradient(to right, #293845, #007eb2) 1;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    background-color: white;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+
+
+/* --- Specifikt för sidan VÅRA RESOR --- */
+.section3 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    width: 60%;
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 200px;
+}
+
+.card {
+    margin: 3rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.section3 figure {
+    text-align: center;
+    background-color: #abc8d7;;
+}
+
+.bodytext {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+
+/* --- Specifikt för sidan NYHETSBREV --- */
+.main {
+    padding: 1rem 5rem;
+    min-height: 600px;
+    background-image:
+        linear-gradient(to bottom, rgba(72, 112, 123, 0.3),rgba(226, 234, 240, 0.9)),
+        url('swedMountain.jpg');
+    background-size: 100% 100%;
+    /* overflow-wrap: break-word; */
+}
+
+form {
+    display: block;
+}
+
+.input {
+	background-color: #fff;
+	border: none;
+    border: 1px solid #d2cfcc;
+	padding: 1rem;
+	margin: 0.5rem 0;
+	width: 50%;
+}
+
+input.submitBtn {
+    display: inline-block;
+    background: linear-gradient(to bottom white, lightgray);
+    color: #48707b; 
+    text-align: center;
+    font-weight: bold;
+    width: 10%;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+/* --- Footer --- */
+
+#footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    background-color: #293845;
+    color: white;
+    padding: 3rem 0 3rem 6rem;
+    /* padding-bottom: 3rem; */
+}
+
+.address h3, .email h3, .social h3 {
+    padding-bottom: 2rem;
+}
+/* för att tvinga grid över hela bredden */
+.copy {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+
