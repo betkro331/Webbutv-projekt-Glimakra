@@ -214,6 +214,16 @@ input.submitBtn {
 .address h3, .email h3, .social h3 {
     padding-bottom: 2rem;
 }
+
+.social i {
+    color: white;
+    padding-right: 1rem;
+    font-size: larger;
+    /* display: grid;
+    align-items: center;  */
+}
+   
+
 /* för att tvinga grid över hela bredden */
 .copy {
     grid-column: 1 / -1;
