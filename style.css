@@ -44,7 +44,7 @@ ul, li, a {
 .section1 {
     min-height: 600px;
     color: black;
-    background-image: url("swedMountain.jpg");
+    background-image: url("img/swedMountain.jpg");
     background-size: cover;
     display: flex;
     justify-content: center; 
@@ -160,6 +160,44 @@ ul, li, a {
     font-size: 1.2rem;
     padding: 10px;
 }
+
+/* --- Specifikt för sidan GALLERI --- */
+h3.gallery {
+    text-align: center;
+    padding-top: 4rem;
+}
+.gallery-specific {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-specific span {
+    font-size: 1.2rem;
+}
+
+.gallery-specific .card {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 1px 2px rgba(0.5, 0.5, 0.5, 0.1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  .gallery-specific .card:after {
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  .gallery-specific .card:hover {
+    transform: scale(1.02);
+  }
+  
 
 
 /* --- Specifikt för sidan NYHETSBREV --- */
