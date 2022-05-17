@@ -1,3 +1,4 @@
+/* --- GENERELLT --- */
 * {
     font-family: 'Pangolin', sans-serif;
     box-sizing: border-box;
@@ -14,11 +15,16 @@ body {
 
 h1 {
     font-size: 4rem;
-}
-
+    }
+    
+    div {
+        display: block;
+    }
+    
+/* --- NAVBAR --- */
 .navbar {
     display: flex;
-    justify-content: flex-end; 
+    justify-content:space-around; 
     background-color: #007eb2; 
     background-color: rgb(72, 112, 123); 
     background-color: #293845; 
@@ -26,21 +32,36 @@ h1 {
     background-color: #abc8d7;
     background-color: rgb(163, 144, 135);
     background-color: #6ea5b3;
-    padding: 20px 0;
+    padding: 20px 0 20px 5px;
 }
 
-div {
-    display: block;
+.navbar div {
+    display: flex;
+    align-items: left;
+    width: 50px;
+    height: 50px;
+    padding: 0 10rem 0 1rem;
+}
+
+.navbar p {
+    font-style: italic;
+    font-size: 1.2rem;
+    padding-top: 0.2rem;
+    padding-left: 1rem;
+    color: white;
+
 }
 
 ul, li, a {
     list-style: none;
     text-decoration: none;
-    padding: 0.8em; 
+    /* padding: 1rem 1.5rem; */
     font-size: 1.5rem;  
     color: black;
   }
 
+
+/* --- SEKTIONER --- */
 .section1 {
     min-height: 600px;
     color: black;
@@ -50,10 +71,6 @@ ul, li, a {
     justify-content: center; 
     align-items: center;
 }
-
-/* .section1-heading {
-    text-align: center;
-} */
 
 .section1 p {
     font-size: 2rem;
@@ -69,7 +86,6 @@ ul, li, a {
     justify-content: center; 
     align-items: center; 
 }
-
 
 
 /* --- Specifikt för sidan INDEX --- */
@@ -105,7 +121,6 @@ ul, li, a {
     grid-template-columns: 1fr;
     align-items: center;
     padding-top: 3rem;
-   
     background-image: linear-gradient(to bottom, rgb(163, 144, 135, 0.4), rgba(226, 234, 240, 0));
 }
 
@@ -130,16 +145,20 @@ ul, li, a {
 }
 
 
-
 /* --- Specifikt för sidan VÅRA RESOR --- */
 .section3 {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    width: 60%;
+    width: 70%;
     margin-top: 6rem;
     margin-left: auto;
     margin-right: auto;
     min-height: 200px;
+}
+
+.section3 figure {
+    padding: 2rem 0;
+    border-radius: 5px;
 }
 
 .card {
@@ -150,7 +169,6 @@ ul, li, a {
     
 }
 
-
 .section3 figure {
     text-align: center;
     background-color: #abc8d7;;
@@ -160,6 +178,7 @@ ul, li, a {
     font-size: 1.2rem;
     padding: 10px;
 }
+
 
 /* --- Specifikt för sidan GALLERI --- */
 h3.gallery {
@@ -199,7 +218,6 @@ h3.gallery {
   }
   
 
-
 /* --- Specifikt för sidan NYHETSBREV --- */
 .main {
     padding: 1rem 5rem;
@@ -237,7 +255,7 @@ input.submitBtn {
     padding: 1rem;
 }
 
-/* --- Footer --- */
+/* --- FOOTER --- */
 
 #footer {
     display: grid;
@@ -262,9 +280,8 @@ input.submitBtn {
 }
    
 
-/* för att tvinga grid över hela bredden */
 .copy {
-    grid-column: 1 / -1;
+    grid-column: 1 / -1; /* för att tvinga grid över hela bredden */
     text-align: center;
     padding: 2rem;
     font-size: 1.2rem;
