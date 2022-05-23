@@ -32,7 +32,7 @@ h1 {
     background-color: #abc8d7;
     background-color: rgb(163, 144, 135);
     background-color: #6ea5b3;
-    padding: 20px 0 20px 5px;
+    padding: 30px 5px 20px 5px;
 }
 
 .navbar div {
@@ -89,7 +89,7 @@ ul, li, a {
 
 
 /* --- Specifikt för sidan INDEX --- */
-.index-specific {
+#index-specific {
     display: grid;
     grid-template-columns: 2fr 2fr;
     width: 80%;
@@ -101,19 +101,32 @@ ul, li, a {
     line-height: 1.5;
 }
 
-.index1 { 
+#index1 { 
     text-align: justify; 
     padding: 3rem;
 }
 
-.index1 p { 
+#index1 p { 
     font-size: 1.2rem;
 }
 
-.index2 {
+#index2 {
     border: solid black 1px;
-    padding: 3rem;
-    background-color:#abc8d7;
+    /* padding: 3rem;
+    background-color:#abc8d7; */
+    position: relative;
+    /* max-width: 1280px; */
+    width: 100%;
+    height: 400px;
+}
+
+#index2 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
 }
 
 .index-specific-beige {
