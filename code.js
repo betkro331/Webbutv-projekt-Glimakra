@@ -15,7 +15,7 @@ function runSlideshow() {
     
     return intervalId
 }
-// setTimeout(runSlideshow(), 3000);
+setTimeout(runSlideshow(), 3000);
 
 
 // //Funktion för att bilder i bildspel "fejdar ut"
