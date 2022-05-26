@@ -14,6 +14,6 @@ function bloggDate() {
     let dates = document.getElementsByClassName("blogg-date");
 
     for (let i = 0; i < dates.length; i++) {
-        dates[i].innerHTML = "Postad: " + dateString;
+        dates[i].innerHTML = "Publicerad: " + dateString;
     }
 }
