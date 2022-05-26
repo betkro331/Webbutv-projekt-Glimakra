@@ -329,8 +329,18 @@ input.submitBtn {
     /* padding-bottom: 3rem; */
 }
 
+.address {
+    font-size: 1.8rem;
+    /* color: white; */
+}
+
 .address h3, .email h3, .social h3 {
     padding-bottom: 2rem;
+}
+
+.email a {
+    font-size: 1.8rem;
+    color: white;
 }
 
 .social i {
