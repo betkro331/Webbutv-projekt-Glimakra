@@ -12,6 +12,7 @@ body {
     font-size: 1.8rem;
     color: black;
     line-height: 1.5;
+    overflow: auto;
 }
 
 h1 {
@@ -60,6 +61,20 @@ ul, li, a {
     color: black;
   }
 
+.navbar a:hover {
+    color: aliceblue;
+}
+
+/* --- Hamburger-meny (@mediaquery) --- */
+input[type=checkbox]{
+    display: none;
+   } 
+
+.hamburger {
+    display: none;
+    font-size: 3rem;
+    user-select: none;
+}
 
 /* --- SEKTIONER --- */
 .hero-image {
@@ -86,6 +101,30 @@ ul, li, a {
     display: flex;
     justify-content: center; 
     align-items: center; 
+}
+
+
+/* --- BUTTON --- */
+#index-button {
+    align-items: center;
+    border-width: 3px;
+    border-radius: 8px;
+    border-style: solid; 
+    border-image: linear-gradient(to right, #293845, #007eb2) 1;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    background-color: white;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+#index-button:hover {
+    background-color: #6ea5b3;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 
@@ -141,21 +180,6 @@ ul, li, a {
     padding: 3rem;
 } 
 
-#index-button {
-    align-items: center;
-    border-width: 3px;
-    border-radius: 8px;
-    border-style: solid; 
-    border-image: linear-gradient(to right, #293845, #007eb2) 1;
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-    background-color: white;
-    margin: 1rem 0;
-    padding: 1rem;
-}
-
 
 /* --- Specifikt för sidan VÅRA RESOR --- */
 .section3 {
@@ -171,6 +195,8 @@ ul, li, a {
 .section3 figure {
     padding: 2rem 0;
     border-radius: 5px;
+    text-align: center;
+    background-color: #abc8d7;
 }
 
 .card {
@@ -178,12 +204,6 @@ ul, li, a {
     display: flex;
     align-items: center;
     justify-content: center;
-    
-}
-
-.bodytext p {
-    text-align: justify;
-    padding: 1rem; 
 }
 
 .card a {
@@ -191,15 +211,16 @@ ul, li, a {
     font-size: 12px;  
 }
 
-.section3 figure {
-    text-align: center;
-    background-color: #abc8d7;;
-}
-
 .bodytext {
     font-size: 1.2rem;
     padding: 10px;
 }
+
+.bodytext p {
+    text-align: justify;
+    padding: 1rem; 
+}
+
 
 /* --- Specifikt för sidan BLOGG & RESETIPS --- */
 #blogg-specific {
@@ -214,8 +235,7 @@ ul, li, a {
 
 .blogg-date {
     font-size: 12px;
-    font-style: italic;
-    
+    font-style: italic; 
 }
 
 #blogg1, #blogg2, #blogg3, #blogg4 {
@@ -225,7 +245,6 @@ background-color: #e3f0f6;
 box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 margin-bottom: 3rem;
 }
-
 
 #blogg1 h4, #blogg2 h4, #blogg3 h4, #blogg4 h4 {
     padding-top: 1rem;
@@ -238,8 +257,6 @@ margin-bottom: 3rem;
 #blogg1 p, #blogg2 p, #blogg3 p, #blogg4 p {
     font-size: 1.2rem;
 }
-
-
 
 
 /* --- Specifikt för sidan GALLERI --- */
@@ -289,7 +306,6 @@ h3.gallery {
         linear-gradient(to bottom, rgba(72, 112, 123, 0.3),rgba(226, 234, 240, 0.9)),
         url('swedMountain.jpg');
     background-size: 100% 100%;
-    /* overflow-wrap: break-word; */
 }
 
 form {
@@ -311,7 +327,8 @@ input.submitBtn {
     color: #48707b; 
     text-align: center;
     font-weight: bold;
-    width: 10%;
+    /* width: 10%; */
+    width: 120px;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
     margin: 1rem 0;
@@ -319,8 +336,7 @@ input.submitBtn {
 }
 
 
-/* --- specifikt för sidan OM --- */
-
+/* --- specifikt för sidan OM OSS --- */
 .about-specific {
     display: grid;
     grid-template-columns: 1fr;
@@ -329,29 +345,23 @@ input.submitBtn {
     margin-left: auto;
     margin-right: auto;
     background-color: #e3f0f6;
-    
-   
 }
 
 .about-specific h3 {
     text-align: center;
-
 }    
 
 .about-specific h4, .about-specific p {
     text-align: left;
-
 }  
 
 .about-img img {
     border: solid #007eb2;
     object-fit: cover;
-
 }
 
 .about-row {
     min-height: 100px;
-    /* border: solid #007eb2; */
     display: flex;
     margin: 2rem;
 }
@@ -363,9 +373,6 @@ input.submitBtn {
     align-items: center;
     padding: 2rem 0;
 }
-
-
-
 
 .about-text-container h4 {
   margin-bottom: 2rem;
@@ -380,11 +387,7 @@ input.submitBtn {
 }
 
 
-
-
-
 /* --- FOOTER --- */
-
 #footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -392,12 +395,10 @@ input.submitBtn {
     background-color: #293845;
     color: white;
     padding: 3rem 0 3rem 6rem;
-    /* padding-bottom: 3rem; */
 }
 
 .address {
     font-size: 1.8rem;
-    /* color: white; */
 }
 
 .address h3, .email h3, .social h3 {
@@ -413,15 +414,11 @@ input.submitBtn {
     color: white;
     padding-right: 1rem;
     font-size: larger;
-    /* display: grid;
-    align-items: center;  */
 }
    
-
 .copy {
     grid-column: 1 / -1; /* för att tvinga grid över hela bredden */
     text-align: center;
     padding: 2rem;
     font-size: 1.2rem;
 }
-
