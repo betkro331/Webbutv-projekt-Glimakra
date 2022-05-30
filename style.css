@@ -51,14 +51,15 @@ div {
     padding-top: 0.2rem;
     padding-left: 1rem;
     color: white;
-
 }
 
 ul, li, a {
+    display: inline;
     list-style: none;
     text-decoration: none;
     font-size: 1.5rem;  
     color: black;
+    padding: 0.5rem;
   }
 
 .navbar a:hover {
@@ -111,6 +112,7 @@ input[type=checkbox]{
     border-radius: 8px;
     border-style: solid; 
     border-image: linear-gradient(to right, #293845, #007eb2) 1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
     font-weight: bold;
     letter-spacing: 0.1rem;
@@ -123,7 +125,6 @@ input[type=checkbox]{
 #index-button:hover {
     background-color: #6ea5b3;
     transition: 0.3s;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
 

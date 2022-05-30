@@ -1,131 +1,134 @@
 <!DOCTYPE html>
 <html lang="sv">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Annorlunda Resor</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="media-query.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <header>
-            <nav class="navbar">
-                <!-- NAVBAR: Samma på alla sidor -->
-                <div>
-                    <img src="img/kayak_logo.png" />
-                    <p>Annorlunda Resor AB</p>
-                </div>
-                <input type="checkbox" id="checkbox_toggle" />
-                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-    
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annorlunda Resor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- NAVBAR: Samma på alla sidor -->
+            <div>
+                <img src="img/kayak_logo.png" alt="logga"/>
+                <p>Annorlunda Resor AB</p>
+            </div>
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <ul>
                 <li><a href="index.html">Hem</a> </li>
                 <li><a href="resor.html">Våra resor</a> </li>
                 <li><a href="resetips.html">Blogg & resetips</a></li>
                 <li><a href="galleri.html">Galleri</a></li>
                 <li><a href="nyhetsbrev.html">Nyhetsbrev</a></li>
                 <li><a href="om.html">Om oss</a></li>
-            </nav>
-        </header>
-    <section class="hero-image">
-        <div>
-            <h1 class="section1-heading">Upplevelser för livet!<h1>
-        </div>
-        
-    </section>
-    <section class="section2">
-        <div>
-            <h5>Sluta aldrig att drömma och sluta aldrig att uppleva!</h5>
-        </div>
-    </section>
-
-    <section id="blogg-specific">
-        <div id="blogg1">
-            <span class="blogg-date"></span>
-            <h4>5 skäl att resa med oss (det finns många fler!)</h4>   
-            <br>
-            <h5>1. Våra makalösa guider</h5>
-            <p>Våra guider är nyckeln till en bra resa. Våra guider är hängivna och kända för sitt engagemang, har stor erfarenhet av den sport som ingår i reseäventyret de guidar. </p><br>
-            <h5>2. Vår erfarenhet</h5>
-            <p>Vi som jobbar på Annorlunda Resor är hängivna resenärer, äventyrare och utövare av allehanda sporter. Vi älskar utmaningar och vi har testat en hel del genom åren, och tack vare detta kan vi erbjuda dig som resenär det allra bästa.</p><br>
-            <h5>3. Hållbart och miljövänligt på riktigt</h5>
-            <p> Hållbarhet och miljövänligt är ord som alla slänger sig med nu för tiden och många utan att genuint mena mycket med det. Med oss reser du med tåg, cyklar, paddlar kajak, åker skidor, vindsurfar, kitesurfar, vandrar och springer. Det är miljövänligt på riktigt. Vi använder till stora delar våra kroppar för att ta oss fram tillsammans med den hjälp vi får av naturen.</p><br>
-            <h5>4. Vi reser med respekt</h5>
-            <p>Vi visar alltid respekt för naturen, djur, växter och andra människor. Vi tar oss genom landskapet på ett ansvarsfullt sätt. Vi tar med oss vårt skräp. Vi väsnas till exempel inte i onödan och vi respekterar självklart häckande fåglar. Behövs det så tar vi en omväg. På det sättet kan du som resenär och vi som resebyrå bidra till en hållbar utveckling så att framtida generationer också kan uppleva vår fantastiska del av världen. Att göra rätt för sig känns också bra inombords.</p><br>
-            <h5>5. Hög kvalitet och prisvärt</h5>
-            <p>Resebranschen är en mycket prispressad branch, men vi skulle aldrig kompromissa med kvalitet eller säkerhet. Vi erbjuder enbart våra kunder det vi själva har upplevt. Vi har testat vartenda hotell, tältmärke, kitesurfing-kurs och slingrig cykelväg som vi erbjuder våra resenärer. Kanske inte varenda maträtt, men nära på.  </p><br>
-        </div>
-        <div id="blogg2">
-            <span class="blogg-date"></span>
-            <h4>Ska du springa Göteborgsvarvet med oss? Läs våra tips!</h4>   
-            <br>
-            <h5>Tanka kroppen med energi!</h5>
-            <p>Ett halvmaraton är bra mycket längre än milen och kräver därför också mer energi. Se till att du laddar upp med att äta lite extra dagarna innan.Du behöver inte överdriva och trycka i dig utan räcker att bara få i sig lite extra.</p><br>
-            <h5>Vätska!</h5>
-            <p>Vänta inte med att dricka, trots att du inte känner dig törstig. Drick istället ofta och lite under hela loppet. Stanna till och drick vid varje vätskestation. </p><br>
-            <h5>Lyssna på din kropp!</h5>
-            <p>Det kommer vara perioder då det känns extra tungt. Men även om du känner dig slut så orkar du mer, men lyssna på din kropp. Gå en stund om du behöver.</p><br>
-            <h5>Njut!</h5>
-            <p>Sist men inte minst: njut av publiken och energin! Hela Göteborgsvarvet är en riktig fest med mycket publik och musik. Njut av stämningen och när du kommer till avenyn så kan det hjälpa att ta energi från publiken.</p><br>
-        </div>
-        <div id="blogg3">
-            <span class="blogg-date"></span>
-            <h4>Tips på packning för vintervandring!</h4>   
-            <br>
-            <h5>Ska du vandra på vintern? Se våra tips nedan.</h5>
-            <p>Uteliv på vintern kräver en del extra utrustning såsom varmare sovsäck, dunjacka, snöskor och spade. Då blir packningen så klart tyngre. Andra saker att tänka på är: långkalsonger (ull), långärmad tröja (ull), mössa, solglasögon,vattentät skaljacka, nack/ansiktsvärmare </p>
-           </div>
-           <div id="blogg4">
-            <span class="blogg-date"></span>
-            <h4>Vill du lära dig fågelskåda?</h4>   
-            <br>
-            <h5>Premiärresa till Öland i september!</h5>
-            <p>Resan börjar en fredag och avslutas en söndag, och du har stor chans att se många fantastiska fåglar. Mer information och möjlighet till bokning kommer snart! </p>
-           </div>
-    </section>
-    <section class="index-specific-beige">
-        <div class="index-specific-beige-text">
-            <h5>Vart vill du åka?</h5>
-            <!-- länk till våra resor genom knappen -->
-        <a href="resor.html"><button type="button" id="index-button">Se våra resor</button></a> 
+            </ul>
+        </nav>
+    </header>
+<section class="hero-image">
+    <div>
+        <h1 class="section1-heading">Upplevelser för livet!</h1>
     </div>
-    </section>
-    <script src="code.js"></script>
-    <script src="code2.js"></script>
-    <footer id="footer">
-        <div class="address">
-            <h3>Besök oss</h3>
-            <p>Äventyrsvägen 1</p>
-            <p>111 84 Stockholm </p>
-            <br>
-            <p>Öppettider: mån-fre 9-17</p>
-            
-        </div>     
-        <div class="email"> 
-            <h3>Kontakta oss</h3>
-           <p><i class="fa-solid fa fa-envelope"></i>
-            <a href="annorlunda@resor.se">annorlunda@resor.se</a></p>
-            <br>
-            <p><i class="fa-solid fa fa-phone"></i>
-            <a href="0766-556 000 00">0766-556 000 00</a></p>
-            <br>
-        </div>
-        <div class="social">
-            <h3>Följ oss</h3>
-            <div class="footer-icons">
-                <i class="fa-brands fa fa-facebook"></i>
-                <i class="fa-brands fa fa-linkedin"></i>
-                <i class="fa-brands fa fa-twitter"></i>
-                <i class="fa-brands fa fa-instagram"></i>
-            </div>
+    
+</section>
+<section class="section2">
+    <div>
+        <h5>Sluta aldrig att drömma och sluta aldrig att uppleva!</h5>
+    </div>
+</section>
 
+<section id="blogg-specific">
+    <div id="blogg1">
+        <span class="blogg-date"></span>
+        <h4>5 skäl att resa med oss (det finns många fler!)</h4>   
+        <br>
+        <h5>1. Våra makalösa guider</h5>
+        <p>Våra guider är nyckeln till en bra resa. Våra guider är hängivna och kända för sitt engagemang, har stor erfarenhet av den sport som ingår i reseäventyret de guidar. </p><br>
+        <h5>2. Vår erfarenhet</h5>
+        <p>Vi som jobbar på Annorlunda Resor är hängivna resenärer, äventyrare och utövare av allehanda sporter. Vi älskar utmaningar och vi har testat en hel del genom åren, och tack vare detta kan vi erbjuda dig som resenär det allra bästa.</p><br>
+        <h5>3. Hållbart och miljövänligt på riktigt</h5>
+        <p> Hållbarhet och miljövänligt är ord som alla slänger sig med nu för tiden och många utan att genuint mena mycket med det. Med oss reser du med tåg, cyklar, paddlar kajak, åker skidor, vindsurfar, kitesurfar, vandrar och springer. Det är miljövänligt på riktigt. Vi använder till stora delar våra kroppar för att ta oss fram tillsammans med den hjälp vi får av naturen.</p><br>
+        <h5>4. Vi reser med respekt</h5>
+        <p>Vi visar alltid respekt för naturen, djur, växter och andra människor. Vi tar oss genom landskapet på ett ansvarsfullt sätt. Vi tar med oss vårt skräp. Vi väsnas till exempel inte i onödan och vi respekterar självklart häckande fåglar. Behövs det så tar vi en omväg. På det sättet kan du som resenär och vi som resebyrå bidra till en hållbar utveckling så att framtida generationer också kan uppleva vår fantastiska del av världen. Att göra rätt för sig känns också bra inombords.</p><br>
+        <h5>5. Hög kvalitet och prisvärt</h5>
+        <p>Resebranschen är en mycket prispressad branch, men vi skulle aldrig kompromissa med kvalitet eller säkerhet. Vi erbjuder enbart våra kunder det vi själva har upplevt. Vi har testat vartenda hotell, tältmärke, kitesurfing-kurs och slingrig cykelväg som vi erbjuder våra resenärer. Kanske inte varenda maträtt, men nära på.  </p><br>
+    </div>
+    <div id="blogg2">
+        <span class="blogg-date"></span>
+        <h4>Ska du springa Göteborgsvarvet med oss? Läs våra tips!</h4>   
+        <br>
+        <h5>Tanka kroppen med energi!</h5>
+        <p>Ett halvmaraton är bra mycket längre än milen och kräver därför också mer energi. Se till att du laddar upp med att äta lite extra dagarna innan.Du behöver inte överdriva och trycka i dig utan räcker att bara få i sig lite extra.</p><br>
+        <h5>Vätska!</h5>
+        <p>Vänta inte med att dricka, trots att du inte känner dig törstig. Drick istället ofta och lite under hela loppet. Stanna till och drick vid varje vätskestation. </p><br>
+        <h5>Lyssna på din kropp!</h5>
+        <p>Det kommer vara perioder då det känns extra tungt. Men även om du känner dig slut så orkar du mer, men lyssna på din kropp. Gå en stund om du behöver.</p><br>
+        <h5>Njut!</h5>
+        <p>Sist men inte minst: njut av publiken och energin! Hela Göteborgsvarvet är en riktig fest med mycket publik och musik. Njut av stämningen och när du kommer till avenyn så kan det hjälpa att ta energi från publiken.</p><br>
+    </div>
+    <div id="blogg3">
+        <span class="blogg-date"></span>
+        <h4>Tips på packning för vintervandring!</h4>   
+        <br>
+        <h5>Ska du vandra på vintern? Se våra tips nedan.</h5>
+        <p>Uteliv på vintern kräver en del extra utrustning såsom varmare sovsäck, dunjacka, snöskor och spade. Då blir packningen så klart tyngre. Andra saker att tänka på är: långkalsonger (ull), långärmad tröja (ull), mössa, solglasögon,vattentät skaljacka, nack/ansiktsvärmare </p>
         </div>
-        <div class="copy">
-            Copyright &copy; 2022 Annorlunda Resor AB. All rights reserved.<br>
+        <div id="blogg4">
+        <span class="blogg-date"></span>
+        <h4>Vill du lära dig fågelskåda?</h4>   
+        <br>
+        <h5>Premiärresa till Öland i september!</h5>
+        <p>Resan börjar en fredag och avslutas en söndag, och du har stor chans att se många fantastiska fåglar. Mer information och möjlighet till bokning kommer snart! </p>
         </div>
+</section>
+<section class="index-specific-beige">
+    <div class="index-specific-beige-text">
+        <h5>Vart vill du åka?</h5>
+        <!-- länk till våra resor genom knappen -->
+    <button type="button" id="index-button"><a href="resor.html">Se våra resor</a></button> 
+</div>
+</section>
+<script src="code.js"></script>
+<script src="code2.js"></script>
+<footer id="footer">
+    <div class="address">
+        <h3>Besök oss</h3>
+        <p>Äventyrsvägen 1</p>
+        <p>111 84 Stockholm </p>
+        <br>
+        <p>Öppettider: mån-fre 9-17</p>
         
-    </footer>
+    </div>     
+    <div class="email"> 
+        <h3>Kontakta oss</h3>
+        <p><i class="fa-solid fa fa-envelope"></i>
+        <a href="annorlunda@resor.se">annorlunda@resor.se</a></p>
+        <br>
+        <p><i class="fa-solid fa fa-phone"></i>
+        <a href="0766-55600000">0766-556 000 00</a></p>
+        <br>
+    </div>
+    <div class="social">
+        <h3>Följ oss</h3>
+        <div class="footer-icons">
+            <i class="fa-brands fa fa-facebook"></i>
+            <i class="fa-brands fa fa-linkedin"></i>
+            <i class="fa-brands fa fa-twitter"></i>
+            <i class="fa-brands fa fa-instagram"></i>
+        </div>
+
+    </div>
+    <div class="copy">
+        Copyright &copy; 2022 Annorlunda Resor AB. All rights reserved.<br>
+    </div>
+    
+</footer>
 
 </body>
+
 </html>
