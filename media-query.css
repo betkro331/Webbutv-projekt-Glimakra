@@ -1,7 +1,8 @@
 /* --- RESPONSIVITET --- */
 
-/* --- Responsivt för laptops/tablets --- */
+/* --- Responsivt för laptops/tablets: 2-3 kolumner visas --- */
 @media (max-width: 1281px) {
+    /*2 kolumner visas på galleri-sidan*/
     .gallery-specific {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -13,15 +14,13 @@
 
 /* --- Responsivt för portrait tablets: 1-2 kolumner visas --- */
 @media (max-width: 992px) {
+    /*2 kolumner visas i footern*/
     #footer {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    .hero-image {
-        background-position: unset;
-    }
-
+    /*1 kolumn visas*/
     .gallery-specific,
     .section3 {
         display: grid;
@@ -30,52 +29,44 @@
 }
 
 /* --- Responsivt för mobil: 1 kolumn visas samt hamburgermeny --- */
-@media (max-width: 769px) {
+@media (max-width: 767px) {
     .section1-heading {
         font-size: 2rem;
     }
     /*Bilder syns inte vid liten skärm */
     #index2,
     .about-img { 
-        display: none;
+        display: none; 
     }
-
-    .section2 {
-        font-size: smaller;
+    /*Rubrik & texter minskar i storlek*/
+    .section2,
+    .main, 
+    .main h1,
+    .card span {
+        font-size: smaller; 
     }
-
+    /*1 kolumn visas*/
     #index-specific,
     #blogg-specific,
     #footer {
         display: grid;
         grid-template-columns: 1fr;
     }
-
     .card img {
         width: 80%;
         height: auto;
     }
-
-    input[type=checkbox]:checked ~ li{
+    /*Koll för hamburgermeny*/
+    input[type=checkbox]:checked ~ li{ 
         display: block;
-       }
-       
+    }
+    /*Nav-menyn ska då ej synas*/
     li {
-        display: none;
+        display: none; 
     }
-
-    .hamburger {
+    /*Hamburgermenyn ska synas*/
+    .hamburger { 
         display: block;
-    }
-
-    .about-row {
-        align-items: center;
-    }
-
-    .main, 
-    .main h1,
-    .card span {
-        font-size: smaller;
     }
 }
 
