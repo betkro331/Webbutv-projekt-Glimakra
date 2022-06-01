@@ -66,6 +66,11 @@ ul, li, a {
     color: aliceblue;
 }
 
+.active {
+   border: 1px solid #48707b; 
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+}
+
 /* --- Hamburger-meny (@mediaquery) --- */
 input[type=checkbox]{
     display: none;
